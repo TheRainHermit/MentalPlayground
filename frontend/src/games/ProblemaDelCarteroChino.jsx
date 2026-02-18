@@ -278,7 +278,7 @@ export default function ProblemaDelCarteroChino() {
   );
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-100 via-white to-purple-100 p-4">
+    <div className="min-h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-br from-blue-100 via-white to-purple-100 p-4">
       <div className="bg-white rounded-xl shadow-lg p-8 max-w-2xl w-full">
         <h2 className="text-3xl font-bold text-blue-700 mb-4">Problema del Cartero Chino</h2>
         <p className="mb-4 text-gray-700">

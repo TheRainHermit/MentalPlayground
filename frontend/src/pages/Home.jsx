@@ -1,5 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
+import BannerJuegos from "../components/BannerJuegos";
 
 const games = [
   { name: "Las 12 Monedas", key: "las12monedas" },
@@ -22,7 +23,8 @@ export default function Home() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen w-screen bg-gradient-to-br from-blue-100 via-white to-purple-100 flex flex-col items-center px-4">
+    <div className="min-h-screen w-screen bg-gradient-to-br from-blue-100 via-white to-purple-100 flex flex-col items-center px-4 pt-14">
+      <BannerJuegos />
       <header className="mb-10 text-center w-full">
         <h1 className="text-4xl md:text-5xl font-extrabold text-blue-700 drop-shadow-lg mb-2">
           Mental Playground - Biblioteca de Juegos Algoritmo

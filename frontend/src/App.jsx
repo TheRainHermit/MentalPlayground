@@ -15,10 +15,12 @@ import PuenteAntorcha from "./games/PuenteYLaAntorcha";
 import OrdenamientoCartas from "./games/OrdenamientoConCartas";
 import CarteroChino from "./games/ProblemaDelCarteroChino";
 import Ajedrez from "./games/Ajedrez";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <BrowserRouter>
+    <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/las12monedas" element={<Las12Monedas />} />

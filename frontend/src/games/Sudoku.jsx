@@ -94,7 +94,7 @@ export default function Sudoku() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-yellow-100 via-white to-blue-100 p-4">
+    <div className="min-h-screen w-screen flex flex-col items-center justify-center bg-gradient-to-br from-yellow-100 via-white to-blue-100 p-4">
       <div className="bg-white rounded-xl shadow-lg p-8 max-w-lg w-full">
         <h2 className="text-3xl font-bold text-blue-700 mb-4">Sudoku</h2>
         <p className="mb-4 text-gray-700">
