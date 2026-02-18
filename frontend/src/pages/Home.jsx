@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 const games = [
   { name: "Las 12 Monedas", key: "las12monedas" },
@@ -12,28 +13,31 @@ const games = [
   { name: "Laberintos (BFS/DFS)", key: "laberintos" },
   { name: "Juego del Nim", key: "nim" },
   { name: "Puente y la Antorcha", key: "puente" },
-  { name: "Ordenamiento con Cartas", key: "ordenamiento" },
+  { name: "Ordenamiento con Cartas", key: "ordenamientocartas" },
   { name: "El Cartero Chino", key: "carterochino" },
   { name: "Ajedrez", key: "ajedrez" },
 ];
 
 export default function Home() {
+  const navigate = useNavigate();
+
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-100 via-white to-purple-100 flex flex-col items-center py-10 px-4">
-      <header className="mb-10 text-center">
+    <div className="min-h-screen w-screen bg-gradient-to-br from-blue-100 via-white to-purple-100 flex flex-col items-center px-4">
+      <header className="mb-10 text-center w-full">
         <h1 className="text-4xl md:text-5xl font-extrabold text-blue-700 drop-shadow-lg mb-2">
-          Biblioteca de Juegos Algoritmo
+          Mental Playground - Biblioteca de Juegos Algoritmo
         </h1>
         <p className="text-lg text-gray-600">
           Explora y juega con clásicos de la algoritmia y la lógica.
         </p>
       </header>
-      <section className="w-full max-w-6xl">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+      <section className="w-full">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full">
           {games.map((game) => (
             <div
               key={game.key}
               className="bg-white rounded-xl shadow-md hover:shadow-xl transition-shadow duration-300 p-4 flex flex-col items-center cursor-pointer border border-transparent hover:border-blue-400 group"
+              onClick={() => navigate(`/${game.key}`)}
             >
               <div className="w-16 h-16 mb-3 rounded-full bg-gradient-to-tr from-blue-200 to-purple-200 flex items-center justify-center overflow-hidden">
                 {/* Placeholder: ícono SVG genérico */}
