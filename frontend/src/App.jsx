@@ -16,6 +16,11 @@ import OrdenamientoCartas from "./games/OrdenamientoConCartas";
 import CarteroChino from "./games/ProblemaDelCarteroChino";
 import Ajedrez from "./games/Ajedrez";
 import Navbar from "./components/Navbar";
+import Acerca from "./pages/About";
+import Juegos from "./pages/Games";
+import Ayuda from "./pages/Help";
+import Contacto from "./pages/Contact";
+
 
 function App() {
   return (
@@ -23,20 +28,10 @@ function App() {
     <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/las12monedas" element={<Las12Monedas />} />
-        <Route path="/adivinaelnumero" element={<AdivinaElNumero />} />
-        <Route path="/torresdehanoi" element={<TorresDeHanoi />} />
-        <Route path="/lobocabra" element={<LoboCabraYCol />} />
-        <Route path="/nreinas" element={<NReinas />} />
-        <Route path="/sudoku" element={<Sudoku />} />
-        <Route path="/tresenraya" element={<TresEnRaya />} />
-        <Route path="/conecta4" element={<Conecta4 />} />
-        <Route path="/laberintos" element={<LaberintosBFSDFS />} />
-        <Route path="/nim" element={<Nim />} />
-        <Route path="/puente" element={<PuenteAntorcha />} />
-        <Route path="/ordenamientocartas" element={<OrdenamientoCartas />} />
-        <Route path="/carterochino" element={<CarteroChino />} />
-        <Route path="/ajedrez" element={<Ajedrez />} />
+        <Route path="/acerca" element={<Acerca />} />
+        <Route path="/juegos" element={<Juegos />} />
+        <Route path="/ayuda" element={<Ayuda />} />
+        <Route path="/contacto" element={<Contacto />} />
       </Routes>
     </BrowserRouter>
   );

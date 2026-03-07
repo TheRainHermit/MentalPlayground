@@ -10,16 +10,48 @@ export default function Navbar() {
         <Link to="/" className="text-2xl font-bold text-blue-700 hover:text-blue-900 transition-colors">
           Mental Playground
         </Link>
-        <div className="flex gap-4">
-          {location.pathname !== "/" && (
-            <Link
-              to="/"
-              className="text-blue-600 hover:text-blue-900 font-semibold transition-colors"
-            >
-              Inicio
-            </Link>
-          )}
-          {/* Puedes agregar más enlaces aquí */}
+        <div className="flex gap-6">
+          <Link
+            to="/"
+            className={`font-semibold transition-colors ${
+              location.pathname === "/" ? "text-blue-700" : "text-blue-500 hover:text-blue-900"
+            }`}
+          >
+            Inicio
+          </Link>
+          <Link
+            to="/acerca"
+            className={`font-semibold transition-colors ${
+              location.pathname === "/acerca" ? "text-blue-700" : "text-blue-500 hover:text-blue-900"
+            }`}
+          >
+            Acerca de
+          </Link>
+          <Link
+            to="/juegos"
+            className={`font-semibold transition-colors ${
+              location.pathname === "/juegos" ? "text-blue-700" : "text-blue-500 hover:text-blue-900"
+            }`}
+          >
+            Juegos
+          </Link>
+          <Link
+            to="/ayuda"
+            className={`font-semibold transition-colors ${
+              location.pathname === "/ayuda" ? "text-blue-700" : "text-blue-500 hover:text-blue-900"
+            }`}
+          >
+            Ayuda
+          </Link>
+          <Link
+            to="/contacto"
+            className={`font-semibold transition-colors ${
+              location.pathname === "/contacto" ? "text-blue-700" : "text-blue-500 hover:text-blue-900"
+            }`}
+          >
+            Contacto
+          </Link>
+          {/* Puedes agregar más pestañas aquí, como Ayuda o Contacto */}
         </div>
       </div>
     </nav>
