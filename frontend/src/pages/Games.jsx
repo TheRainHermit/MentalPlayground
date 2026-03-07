@@ -22,7 +22,7 @@ export default function Juegos() {
   const navigate = useNavigate();
 
   return (
-    <div className="min-h-screen pt-20 flex flex-col items-center bg-gradient-to-br from-blue-100 via-white to-purple-100 px-4">
+    <div className="min-h-screen pt-20 flex flex-col w-screen items-center bg-gradient-to-br from-blue-100 via-white to-purple-100 px-4">
       <div className="mb-8 text-center">
         <h2 className="text-3xl font-bold text-blue-700 mb-2">Catálogo de Juegos</h2>
         <p className="text-gray-700">Explora y selecciona un juego para comenzar.</p>

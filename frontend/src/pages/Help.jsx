@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Ayuda() {
   return (
-    <div className="min-h-screen pt-20 flex flex-col items-center bg-gradient-to-br from-blue-100 via-white to-purple-100 px-4">
+    <div className="min-h-screen pt-20 flex flex-col w-screen items-center bg-gradient-to-br from-blue-100 via-white to-purple-100 px-4">
       <div className="bg-white rounded-xl shadow-lg p-8 max-w-2xl w-full mt-8">
         <h2 className="text-3xl font-bold text-blue-700 mb-4">Ayuda</h2>
         <p className="mb-4 text-gray-700">
